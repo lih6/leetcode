@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'python-opencv' ]
+2 info using npm@2.15.0
+3 info using node@v4.4.2
+4 verbose config Skipping project config: /Users/chaofeng/.npmrc. (matches userconfig)
+5 verbose install initial load of /Users/chaofeng/package.json
+6 verbose installManyTop reading scoped package data from /Users/chaofeng/node_modules/csv/package.json
+7 verbose installManyTop reading scoped package data from /Users/chaofeng/node_modules/geojson/package.json
+8 verbose installManyTop reading scoped package data from /Users/chaofeng/node_modules/graceful-fs/package.json
+9 verbose installManyTop reading scoped package data from /Users/chaofeng/node_modules/jimp/package.json
+10 verbose installManyTop reading scoped package data from /Users/chaofeng/node_modules/logger/package.json
+11 verbose installManyTop reading scoped package data from /Users/chaofeng/node_modules/materialize-css/package.json
+12 verbose installManyTop reading scoped package data from /Users/chaofeng/node_modules/node-taffydb/package.json
+13 verbose installManyTop reading scoped package data from /Users/chaofeng/node_modules/optimist/package.json
+14 verbose installManyTop reading scoped package data from /Users/chaofeng/node_modules/plotly/package.json
+15 verbose installManyTop reading scoped package data from /Users/chaofeng/node_modules/update/package.json
+16 info package.json node-taffydb@0.2.0 No license field.
+17 info package.json optimist@0.6.1 license should be a valid SPDX license expression
+18 info package.json logger@0.0.1 No repository field.
+19 info package.json logger@0.0.1 No license field.
+20 verbose readDependencies loading dependencies from /Users/chaofeng/package.json
+21 silly cache add args [ 'python-opencv', null ]
+22 verbose cache add spec python-opencv
+23 silly cache add parsed spec Result {
+23 silly cache add   raw: 'python-opencv',
+23 silly cache add   scope: null,
+23 silly cache add   name: 'python-opencv',
+23 silly cache add   rawSpec: '',
+23 silly cache add   spec: 'latest',
+23 silly cache add   type: 'tag' }
+24 silly addNamed python-opencv@latest
+25 verbose addNamed "latest" is being treated as a dist-tag for python-opencv
+26 info addNameTag [ 'python-opencv', 'latest' ]
+27 silly mapToRegistry name python-opencv
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'python-opencv',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   name: 'python-opencv',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/python-opencv
+32 verbose addNameTag registry:https://registry.npmjs.org/python-opencv not in flight; fetching
+33 verbose request uri https://registry.npmjs.org/python-opencv
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 1:56:05 PM
+36 verbose request id 14d4f5da57bfaa69
+37 http request GET https://registry.npmjs.org/python-opencv
+38 http 404 https://registry.npmjs.org/python-opencv
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=0',
+39 verbose headers   'content-length': '2',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Sat, 11 Feb 2017 21:56:06 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   age: '0',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-lax8644-LAX',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1486850165.783741,VS0,VE480',
+39 verbose headers   vary: 'Accept-Encoding' }
+40 silly get cb [ 404,
+40 silly get   { 'content-type': 'application/json',
+40 silly get     'cache-control': 'max-age=0',
+40 silly get     'content-length': '2',
+40 silly get     'accept-ranges': 'bytes',
+40 silly get     date: 'Sat, 11 Feb 2017 21:56:06 GMT',
+40 silly get     via: '1.1 varnish',
+40 silly get     age: '0',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-served-by': 'cache-lax8644-LAX',
+40 silly get     'x-cache': 'MISS',
+40 silly get     'x-cache-hits': '0',
+40 silly get     'x-timer': 'S1486850165.783741,VS0,VE480',
+40 silly get     vary: 'Accept-Encoding' } ]
+41 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/python-opencv
+41 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+41 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+41 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+41 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+41 verbose stack     at emitTwo (events.js:87:13)
+41 verbose stack     at Request.emit (events.js:172:7)
+41 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+41 verbose stack     at emitOne (events.js:82:20)
+41 verbose stack     at Request.emit (events.js:169:7)
+41 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+42 verbose statusCode 404
+43 verbose pkgid python-opencv
+44 verbose cwd /Users/chaofeng/Desktop/prepare/homework/leetcode
+45 error Darwin 16.4.0
+46 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "python-opencv"
+47 error node v4.4.2
+48 error npm  v2.15.0
+49 error code E404
+50 error 404 Registry returned 404 for GET on https://registry.npmjs.org/python-opencv
+50 error 404
+50 error 404 'python-opencv' is not in the npm registry.
+50 error 404 You should bug the author to publish it (or use the name yourself!)
+50 error 404
+50 error 404 Note that you can also install from a
+50 error 404 tarball, folder, http url, or git url.
+51 verbose exit [ 1, true ]
